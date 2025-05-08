@@ -1,8 +1,7 @@
 # Automated Testing Framework for a Web Application
-We will develop an automated testing suite using Selenium or a similar framework to test the functionality of a web application. Implement test cases for UI, functionality, and performance testing. Generate reports and analyze test results.
-<br/><br/>**Requirement**:
+W/><br/>**Requirement**:
 <br/><br/>**Develop functional test cases:** Write detailed test cases to cover key functional workflows (e.g., user login, form submission, data processing).
-<br/><br/>**Automated test scripts:** Automate the execution of functional tests using Selenium.
+<br/><![img.png](img.png)br/>**Automated test scripts:** Automate the execution of functional tests using Selenium.
 <br/><br/>**Implement report generation:** Integrate tools like TestNG or JUnit to generate detailed test reports with test results.
 <br/><br/>**API test cases:** Expand API testing in Postman by adding more endpoints and verifying data.
 <br/><br/>**Test management integration:** Integrate Jira for managing test cases and tracking issues found during testing.

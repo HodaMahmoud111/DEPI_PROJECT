@@ -48,11 +48,21 @@ public class RegistrationUserCreationTest extends BaseTest {
             "zoz" + System.currentTimeMillis(),
             "password123", true
         );
-        // Step 5: Wait for "My Account" section to appear after successful registration
 
-        myAccPage.WaitElements(myAccPage.getMyAccountLocator(),10);
-        // Step 6: Assertion - Check that "My Account" element is displayed
+        // Step 5: Handle alert if present
+        if (createAccPage.isAlertPresent()) {
+            // Get alert text for logging/verification (optional)
+            String alertText = createAccPage.getAlertText();
+            System.out.println("Alert detected: " + alertText);
+            
+            // Accept the alert to proceed
+            createAccPage.dismissAlert();
+        }
 
+        // Step 6: Wait for "My Account" section to appear after successful registration
+        myAccPage.WaitElements(myAccPage.getMyAccountLocator(), 10);
+        
+        // Step 7: Assertion - Check that "My Account" element is displayed
         Assert.assertTrue(myAccPage.isElementDisplayed(myAccPage.getMyAccountLocator()));
     }
 }
