@@ -15,8 +15,6 @@ import java.nio.file.AccessDeniedException;
 
 public class E2E extends BaseTest{
 
-
-
         HomePage homePage;
         LoginPage loginPage;
         ProductPage productPage;
@@ -37,7 +35,6 @@ public class E2E extends BaseTest{
             confirmationPage = new ConfirmationPage(driver);
             createAccPage = new CreateAccPage(driver);
         }
-
 
         @DataProvider (name = "Data")
 
