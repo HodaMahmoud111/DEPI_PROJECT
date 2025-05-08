@@ -22,7 +22,6 @@ public class AddToCartTest extends BaseTest {
     AddToCartPage addToCartPage;
     CategoryPage categoryPage;
     // Setup: Initialize all page objects before running the test class
-
     @BeforeClass
     public void setUpPages() {
         homePage = new HomePage(driver);
