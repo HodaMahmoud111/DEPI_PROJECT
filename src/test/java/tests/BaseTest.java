@@ -18,10 +18,10 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-//    @AfterSuite
-//    public void suiteTearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterSuite
+    public void suiteTearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }

@@ -53,7 +53,7 @@ public class RegistrationUserCreationTest extends BaseTest {
         if (createAccPage.isAlertPresent()) {
             // Get alert text for logging/verification (optional)
             String alertText = createAccPage.getAlertText();
-            System.out.println("Alert detected: " + alertText);
+//            System.out.println("Alert detected: " + alertText);
             
             // Accept the alert to proceed
             createAccPage.dismissAlert();
